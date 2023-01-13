@@ -1,0 +1,28 @@
+name: flutterprint
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/flutterprint.yaml"
+      - "src/my_app/lib/**"
+      - "src/my_app/test/**"
+      - "src/my_app/pubspec.yaml"
+      - "tool/generator/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/flutterprint.yaml"
+      - "src/my_app/lib/**"
+      - "src/my_app/test/**"
+      - "src/my_app/pubspec.yaml"
+      - "tool/generator/**"
+
+jobs:
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_channel: stable
+      flutter_version: 3.3.8
+      min_coverage: 80
+      working_directory: src/my_app

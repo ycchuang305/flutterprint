@@ -8,8 +8,7 @@
     "description": "{{{description}}}",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
-    "icons": [
-        {
+    "icons": [{
             "src": "icons/Icon-192.png",
             "sizes": "192x192",
             "type": "image/png"
