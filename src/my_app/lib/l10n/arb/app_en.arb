@@ -1,7 +1,61 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+    "account": "Account",
+    "@account": {
+        "description": "Text shown in the title of account text field"
+    },
+    "password": "Password",
+    "@password": {
+        "description": "Text shown in the title of password text field"
+    },
+    "signinAppBarTitle": "Sign In",
+    "@signinAppBarTitle": {
+        "description": "Title of the sign in page"
+    },
+
+    "pageNotFound": "404 - Page not found",
+
+    "homePageAppBarTitle": "Home",
+    "signOut": "Sign out",
+    "staySignedin": "Keep me signed in",
+    "submit": "Submit",
+    "authenticating": "Authenticating...",
+    "accountCanNotBeEmpty": "Account can't be empty",
+    "passwordCanNotBeEmpty": "Password can't be empty",
+    "incorrectAccountOrPassword": "Account or password is incorrect",
+
+    "apiAgreementConflict": "API agreement conflict",
+    "badRequest": "Bad request",
+    "forbidden": "Permission denied",
+    "socket": "Socket error",
+    "notFound": "Not found",
+    "serviceUnavailable": "Service unavailable",
+    "timeout": "Request timeout",
+    "unauthorized": "Unauthorized",
+    "unknown": "An error occurred with status code: {statusCode}",
+    "@unknown": {
+        "placeholders": {
+            "statusCode": {
+                "type": "int"
+            }
+        }
+    },
+
+    "backendEnvEnableText": "Press {value} more times to access the backend environment settings page",
+    "@backendEnvEnableText": {
+        "placeholders": {
+            "value": {
+                "type": "int"
+            }
+        }
+    },
+    "backendEnvAppBarTitle": "Backend Environment",
+    "backendEnvRelease": "Release",
+    "backendEnvDemo": "Demo",
+    "backendEnvDevelop": "Develop",
+    "backendEnvLocal": "Local",
+    "backendEnvLocalDescription": "Enter the local IP address followed by a port number.\nFor example, you can access the host at http://192.168.0.1:8000 by entering 192.168.0.1:8000",
+    "save": "Save",
+
+    "incorrectInputFormat": "Incorrect input format"
 }

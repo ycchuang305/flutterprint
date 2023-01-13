@@ -1,0 +1,51 @@
+{
+    "@@locale": "zh",
+    "account": "帳號",
+    "@account": {
+        "description": "用於帳號欄位的標題文字"
+    },
+    "password": "密碼",
+    "@password": {
+        "description": "用於密碼欄位的標題文字"
+    },
+    "signinAppBarTitle": "登入",
+
+    "pageNotFound": "404 - 找不到頁面",
+
+    "homePageAppBarTitle": "首頁",
+    "signOut": "登出",
+    "staySignedin": "保持登入",
+    "submit": "送出",
+    "authenticating": "驗證中...",
+    "accountCanNotBeEmpty": "帳號不可為空白",
+    "passwordCanNotBeEmpty": "密碼不可為空白",
+    "incorrectAccountOrPassword": "帳號或密碼錯誤",
+
+    "apiAgreementConflict": "API 協議衝突",
+    "badRequest": "錯誤請求",
+    "forbidden": "權限不足",
+    "socket": "連線異常",
+    "notFound": "未找到",
+    "serviceUnavailable": "服務無法使用",
+    "timeout": "請求逾時",
+    "unauthorized": "帳戶未授權",
+    "unknown": "錯誤碼 {statusCode}",
+
+    "backendEnvEnableText": "再按 {value} 次進入後端環境設定頁",
+    "@backendEnvEnableText": {
+        "placeholders": {
+            "value": {
+                "type": "int"
+            }
+        }
+    },
+    "backendEnvAppBarTitle": "後端環境設定",
+    "backendEnvRelease": "Release",
+    "backendEnvDemo": "Demo",
+    "backendEnvDevelop": "Develop",
+    "backendEnvLocal": "Local",
+    "backendEnvLocalDescription": "Enter the local IP address followed by a port number.\nFor example, you can access the host at http://192.168.0.1:8000 by entering 192.168.0.1",
+    "save": "儲存",
+
+    "incorrectInputFormat": "輸入格式錯誤"
+}

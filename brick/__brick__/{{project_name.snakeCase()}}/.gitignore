@@ -55,6 +55,7 @@ linked_*.ds
 unlinked.ds
 unlinked_spec.ds
 .fvm/
+test/coverage_helper_test.dart
 
 # Android related
 **/android/**/gradle-wrapper.jar
