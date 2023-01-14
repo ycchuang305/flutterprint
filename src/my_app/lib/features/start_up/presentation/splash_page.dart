@@ -5,26 +5,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutterprint/constant/theme/theme.dart';
 import 'package:flutterprint/features/authentication/authentication.dart';
-import 'package:flutterprint/features/backend_environment/application/host_controller.dart';
-import 'package:flutterprint/services/local_storage/local_storage.dart';
+import 'package:flutterprint/features/start_up/data/start_up_repository.dart';
 import 'package:flutterprint/services/rest_api_service/rest_api_service.dart';
 
-class LandingPage extends ConsumerStatefulWidget {
-  const LandingPage({super.key});
+class SplashPage extends ConsumerStatefulWidget {
+  const SplashPage({super.key});
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _LandingPageState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _SplashPageState();
 }
 
-class _LandingPageState extends ConsumerState<LandingPage>
-    with AfterLayoutMixin<LandingPage> {
+class _SplashPageState extends ConsumerState<SplashPage>
+    with AfterLayoutMixin<SplashPage> {
   @override
-  FutureOr<void> afterFirstLayout(BuildContext context) async {
-    // Considering add more logic here if there are something have to be done before authenticating
-    await ref.read(secureRepositoryProvider).validateSecureStorage();
-    ref.read(hostControllerProvider.notifier).init();
-    ref.read(authControllerProvider.notifier).authentication();
-  }
+  FutureOr<void> afterFirstLayout(BuildContext context) =>
+      ref.read(startUpRepositoryProvider).prepareAuthentication();
 
   @override
   Widget build(BuildContext context) {
