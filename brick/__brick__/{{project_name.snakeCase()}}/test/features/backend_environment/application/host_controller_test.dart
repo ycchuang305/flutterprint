@@ -39,7 +39,7 @@ void main() {
             listener,
             fireImmediately: true,
           );
-          container.read(hostControllerProvider.notifier).init();
+          container.read(hostControllerProvider.notifier).setUpHost();
           verifyInOrder([
             () => listener(null, const Host()),
             () => listener(
@@ -61,7 +61,7 @@ void main() {
             listener,
             fireImmediately: true,
           );
-          container.read(hostControllerProvider.notifier).init();
+          container.read(hostControllerProvider.notifier).setUpHost();
           verifyInOrder([
             () => listener(null, const Host()),
             () =>
@@ -83,7 +83,7 @@ void main() {
             listener,
             fireImmediately: true,
           );
-          container.read(hostControllerProvider.notifier).init();
+          container.read(hostControllerProvider.notifier).setUpHost();
           verifyInOrder([
             () => listener(null, const Host()),
             () => listener(
@@ -107,7 +107,7 @@ void main() {
             listener,
             fireImmediately: true,
           );
-          container.read(hostControllerProvider.notifier).init();
+          container.read(hostControllerProvider.notifier).setUpHost();
           verifyInOrder([
             () => listener(null, const Host()),
             () => listener(
@@ -133,7 +133,7 @@ void main() {
         listener,
         fireImmediately: true,
       );
-      container.read(hostControllerProvider.notifier).init();
+      container.read(hostControllerProvider.notifier).setUpHost();
       await container
           .read(hostControllerProvider.notifier)
           .update(hostKey: BackendEnv.demo.hostKey);
