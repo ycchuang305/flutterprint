@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:{{project_name.snakeCase()}}/features/backend_environment/presentation/backend_environment_setting_page.dart';
 import 'package:{{project_name.snakeCase()}}/features/home/presentation/home_page.dart';
+import 'package:{{project_name.snakeCase()}}/features/start_up/presentation/splash_page.dart';
 import 'package:{{project_name.snakeCase()}}/router/not_found_page.dart';
 import 'package:{{project_name.snakeCase()}}/widgets/widgets.dart';
 import 'package:go_router/go_router.dart';
@@ -10,7 +11,7 @@ import 'package:{{project_name.snakeCase()}}/features/authentication/authenticat
 enum AppRoute {
   //TODO: Manage app route and its path
   home('/'),
-  landing('/landing'),
+  splash('/splash'),
   signIn('/signIn'),
   backendEnv('backendEnv'); // sub-route of sign-in page
 
@@ -57,13 +58,13 @@ class AppRouterNotifier extends ChangeNotifier {
     final authState = _ref.read(authControllerProvider);
 
     final onSignInRoutes = routeState.location.startsWith(AppRoute.signIn.path);
-    final onLandingPage = routeState.location == AppRoute.landing.path;
+    final onSplashPage = routeState.location == AppRoute.splash.path;
 
     String? redirectPath = authState.maybeWhen(
-      unknown: () => onLandingPage ? null : AppRoute.landing.path,
+      unknown: () => onSplashPage ? null : AppRoute.splash.path,
       unauthenticated: () => onSignInRoutes ? null : AppRoute.signIn.path,
       authenticated: () {
-        if (onSignInRoutes || onLandingPage) {
+        if (onSignInRoutes || onSplashPage) {
           return AppRoute.home.path;
         }
         return null;
@@ -76,9 +77,9 @@ class AppRouterNotifier extends ChangeNotifier {
   //TODO: Manage routes
   List<RouteBase> get _routes => [
         GoRoute(
-          name: AppRoute.landing.name,
-          path: AppRoute.landing.path,
-          builder: (_, __) => const LandingPage(),
+          name: AppRoute.splash.name,
+          path: AppRoute.splash.path,
+          builder: (_, __) => const SplashPage(),
         ),
         GoRouteBanner(
           name: AppRoute.home.name,

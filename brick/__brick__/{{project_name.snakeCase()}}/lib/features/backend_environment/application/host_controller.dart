@@ -14,7 +14,7 @@ class HostController extends StateNotifier<Host> {
 
   final SharedPreferenceRepository sharedPreferenceRepository;
 
-  void init() => state = _getHost(sharedPreferenceRepository.hostKey);
+  void setUpHost() => state = _getHost(sharedPreferenceRepository.hostKey);
 
   Future<void> update({required String hostKey}) async {
     if (hostKey.isNotEmpty) {
