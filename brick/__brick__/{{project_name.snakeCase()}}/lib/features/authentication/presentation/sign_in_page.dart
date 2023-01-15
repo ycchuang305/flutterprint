@@ -7,6 +7,7 @@ import 'package:{{project_name.snakeCase()}}/features/theme_mode/application/the
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
 import 'package:{{project_name.snakeCase()}}/router/app_router.dart';
 import 'package:{{project_name.snakeCase()}}/services/rest_api_service/rest_api_service.dart';
+import 'package:{{project_name.snakeCase()}}/services/snackbar/app_snackbar_repository.dart';
 import 'package:{{project_name.snakeCase()}}/utils/utils.dart';
 import 'package:{{project_name.snakeCase()}}/widgets/countdown_trigger.dart';
 
