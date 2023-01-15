@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
 import 'package:{{project_name.snakeCase()}}/services/rest_api_service/domain/api_failure.dart';
-import 'package:{{project_name.snakeCase()}}/utils/snackbar/app_snackbar_repository.dart';
+import 'package:{{project_name.snakeCase()}}/services/snackbar/app_snackbar_repository.dart';
 
 export 'data/rest_api_service.dart';
 export 'data/rest_api_service_impl.dart';
