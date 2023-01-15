@@ -5,7 +5,7 @@ import 'package:flutterprint/constant/theme/theme.dart';
 import 'package:flutterprint/features/authentication/authentication.dart';
 import 'package:flutterprint/features/theme_mode/application/theme_mode_controller.dart';
 import 'package:flutterprint/l10n/l10n.dart';
-import 'package:flutterprint/router/app_router.dart';
+import 'package:flutterprint/routing/app_router.dart';
 import 'package:flutterprint/services/rest_api_service/rest_api_service.dart';
 import 'package:flutterprint/services/snackbar/app_snackbar_repository.dart';
 import 'package:flutterprint/utils/utils.dart';

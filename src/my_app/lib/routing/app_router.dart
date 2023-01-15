@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterprint/features/backend_environment/presentation/backend_environment_setting_page.dart';
 import 'package:flutterprint/features/home/presentation/home_page.dart';
 import 'package:flutterprint/features/start_up/presentation/splash_page.dart';
-import 'package:flutterprint/router/not_found_page.dart';
+import 'package:flutterprint/routing/not_found_page.dart';
 import 'package:flutterprint/widgets/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

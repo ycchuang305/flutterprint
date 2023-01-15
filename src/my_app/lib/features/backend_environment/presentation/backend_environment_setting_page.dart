@@ -5,7 +5,7 @@ import 'package:flutterprint/constant/theme/theme.dart';
 import 'package:flutterprint/features/backend_environment/application/host_controller.dart';
 import 'package:flutterprint/features/backend_environment/domain/backend_env.dart';
 import 'package:flutterprint/l10n/l10n.dart';
-import 'package:flutterprint/router/app_router.dart';
+import 'package:flutterprint/routing/app_router.dart';
 import 'package:flutterprint/utils/validators/local_host_validator_mixin.dart';
 
 class BackendEnvironmentSettingPage extends ConsumerStatefulWidget {
