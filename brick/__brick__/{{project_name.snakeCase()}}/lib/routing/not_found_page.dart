@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:{{project_name.snakeCase()}}/constant/app_sizes.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
-import 'package:{{project_name.snakeCase()}}/router/app_router.dart';
+import 'package:{{project_name.snakeCase()}}/routing/app_router.dart';
 
 class NotFoundPage extends ConsumerWidget {
   const NotFoundPage({super.key});

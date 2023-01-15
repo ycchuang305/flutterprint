@@ -5,7 +5,7 @@ import 'package:{{project_name.snakeCase()}}/constant/theme/theme.dart';
 import 'package:{{project_name.snakeCase()}}/features/authentication/authentication.dart';
 import 'package:{{project_name.snakeCase()}}/features/theme_mode/application/theme_mode_controller.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
-import 'package:{{project_name.snakeCase()}}/router/app_router.dart';
+import 'package:{{project_name.snakeCase()}}/routing/app_router.dart';
 import 'package:{{project_name.snakeCase()}}/services/rest_api_service/rest_api_service.dart';
 import 'package:{{project_name.snakeCase()}}/services/snackbar/app_snackbar_repository.dart';
 import 'package:{{project_name.snakeCase()}}/utils/utils.dart';

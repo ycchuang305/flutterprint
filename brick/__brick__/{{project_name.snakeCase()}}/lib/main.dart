@@ -7,7 +7,7 @@ import 'package:{{project_name.snakeCase()}}/constant/theme/theme.dart';
 import 'package:{{project_name.snakeCase()}}/features/theme_mode/application/theme_mode_controller.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
 import 'package:{{project_name.snakeCase()}}/services/local_storage/local_storage.dart';
-import 'package:{{project_name.snakeCase()}}/router/app_router.dart';
+import 'package:{{project_name.snakeCase()}}/routing/app_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
