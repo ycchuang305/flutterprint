@@ -5,7 +5,7 @@ import 'package:{{project_name.snakeCase()}}/constant/theme/theme.dart';
 import 'package:{{project_name.snakeCase()}}/features/backend_environment/application/host_controller.dart';
 import 'package:{{project_name.snakeCase()}}/features/backend_environment/domain/backend_env.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
-import 'package:{{project_name.snakeCase()}}/router/app_router.dart';
+import 'package:{{project_name.snakeCase()}}/routing/app_router.dart';
 import 'package:{{project_name.snakeCase()}}/utils/validators/local_host_validator_mixin.dart';
 
 class BackendEnvironmentSettingPage extends ConsumerStatefulWidget {

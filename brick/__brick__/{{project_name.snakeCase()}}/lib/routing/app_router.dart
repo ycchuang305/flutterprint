@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:{{project_name.snakeCase()}}/features/backend_environment/presentation/backend_environment_setting_page.dart';
 import 'package:{{project_name.snakeCase()}}/features/home/presentation/home_page.dart';
 import 'package:{{project_name.snakeCase()}}/features/start_up/presentation/splash_page.dart';
-import 'package:{{project_name.snakeCase()}}/router/not_found_page.dart';
+import 'package:{{project_name.snakeCase()}}/routing/not_found_page.dart';
 import 'package:{{project_name.snakeCase()}}/widgets/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
