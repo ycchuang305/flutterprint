@@ -7,7 +7,7 @@ import 'package:flutterprint/constant/theme/theme.dart';
 import 'package:flutterprint/features/theme_mode/application/theme_mode_controller.dart';
 import 'package:flutterprint/l10n/l10n.dart';
 import 'package:flutterprint/services/local_storage/local_storage.dart';
-import 'package:flutterprint/router/app_router.dart';
+import 'package:flutterprint/routing/app_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
