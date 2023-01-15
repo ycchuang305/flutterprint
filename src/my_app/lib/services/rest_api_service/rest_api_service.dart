@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutterprint/l10n/l10n.dart';
 import 'package:flutterprint/services/rest_api_service/domain/api_failure.dart';
-import 'package:flutterprint/utils/snackbar/app_snackbar_repository.dart';
+import 'package:flutterprint/services/snackbar/app_snackbar_repository.dart';
 
 export 'data/rest_api_service.dart';
 export 'data/rest_api_service_impl.dart';
