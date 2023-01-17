@@ -1,5 +1,5 @@
 name: flutterprint
-description: A Flutter blueprint
+description: A starter app that streamlines development by providing a pre-configured structure and commonly used features for building maintainable and scalable Flutter apps
 repository: https://github.com/ycchuang305/flutterprint
 version: 0.1.1
 
