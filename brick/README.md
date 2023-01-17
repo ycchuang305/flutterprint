@@ -3,42 +3,11 @@
 [![License: MIT][license_badge]][license_link]
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
-Your Blueprint for Building Maintainable and Scalable Flutter Apps runs on Android, iOS, and Web.
-
-### Credits
-This project was originally developed by [Very Good Ventures][very_good_ventures_link] 🦄
-
-It has been forked and adapted for creating different App templates by Danny Chuang.
-
-This fork is not officially maintained or affiliated with Very Good Ventures.
+A starter app that streamlines development by providing a pre-configured structure and commonly used features for building maintainable and scalable Flutter apps 
 
 ---
-## Getting Started 🚀
-This app template can be generated using [mason_cli][mason_cli_link] with customized variables.
 
-Ensure you have [mason_cli][mason_cli_link] installed.
-
-```sh
-# Activate mason_cli from https://pub.dev
-dart pub global activate mason_cli
-```
-```sh
-# Or install from https://brew.sh
-brew tap felangel/mason
-brew install mason
-```
-
-Installation
-```sh
-# Install locally
-mason add flutterprint --git-url https://github.com/ycchuang305/flutterprint --git-path brick/
-```
-```sh
-# Or install globally
-mason add -g flutterprint --git-url https://github.com/ycchuang305/flutterprint --git-path brick/
-```
-
-Usage 🚀
+### Usage 🚀
 ```sh
 # Generate the flutterprint app template
 mason make flutterprint
@@ -58,10 +27,6 @@ flutter pub run build_runner build --delete-conflicting-outputs
 | `org_name`         | The organization name           | com.example         | `string` |
 | `application_id`   | The application id on Android, Bundle ID on iOS and company name on Windows. If omitted value will be formed by org_name + . + project_name.       | (empty)             | `string` | 
 | `description`      | A short project description     | A Flutter blueprint | `string` |
-
----
-## Preview 📱
-![preview](./images/flutterprint_preview.gif)
 
 ---
 ## What's Included ✨
@@ -97,13 +62,28 @@ Out of the box, Flutterprint includes:
   
 ---
 
+## Folder Structure
+
+```sh
+├── lib
+│   ├── constant
+│   ├── features
+│   ├── l10n
+│   ├── routing
+│   ├── services
+│   ├── utils
+│   ├── widgets
+│   └── main.dart
+```
+Please note that the folder structure presented here is limited to the `lib` directory, but the template also includes generated files and configurations in other directories such as `android`, `ios`, and `.pubspec.yaml`.
+
+---
 ## Development Guideline
 
-**Project layout**
+**Feature-first structure**
 
 The app template is structured in a `feature-first(layers inside features)` way to make it easy to add new features and maintain the codebase. This folder contains all the different features of the app, organized into subfolders by feature name. Each feature folder contains subfolders for data, domain, application and presentation layers.
 
-When adding a new feature to the app, it is recommended to create a new folder in the `lib/features` folder and structure it similarly to the existing feature folders. This will help keep the codebase organized and make it easy to find and maintain the code for each feature.
 
 ```sh
 ├── lib
@@ -146,7 +126,7 @@ Each layer has its own role for a given feature:
 
 - **Routes**
     
-    The routes for the app are defined and declared in the `app_router.dart`, which is located in the `lib/router` directory. For more information, please refer to [go_router][go_router_link].
+    The routes for the app are defined and declared in the `app_router.dart`, which is located in the `lib/routing` directory. For more information, please refer to [go_router][go_router_link].
 
 ---
 
@@ -270,7 +250,9 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 ```
 
 ---
-## Acknowledgments
+## Credits and Acknowledgments
+This project was originally developed by [Very Good Ventures][very_good_ventures_link] 🦄. It has been forked and adapted for creating different App templates by Danny Chuang.
+
 Some of the project's structure and test flow were inspired by [Andrea Bizzotto](https://github.com/bizz84). I would like to acknowledge and thank him for the inspiration he provided through his work.
 
 [coverage_badge]: src/my_app/coverage_badge.svg

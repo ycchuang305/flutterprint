@@ -89,7 +89,7 @@ Each layer has its own role for a given feature:
 
 - **Routes**
     
-    The routes for the app are defined and declared in the `app_router.dart`, which is located in the `lib/router` directory. For more information, please refer to [go_router][go_router_link].
+    The routes for the app are defined and declared in the `app_router.dart`, which is located in the `lib/routing` directory. For more information, please refer to [go_router][go_router_link].
 
 ---
 
