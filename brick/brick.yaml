@@ -1,7 +1,7 @@
 name: flutterprint
 description: A Flutter blueprint
 repository: https://github.com/ycchuang305/flutterprint
-version: 0.1.0
+version: 0.1.1
 
 environment:
   mason: ">=0.1.0-dev.32 <0.1.0"

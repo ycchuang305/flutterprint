@@ -1,3 +1,7 @@
+# 0.1.1
+
+- docs: update readme
+
 # 0.1.0
 
 - feat: add startup feature 
