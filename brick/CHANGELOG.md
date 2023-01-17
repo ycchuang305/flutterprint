@@ -1,3 +1,7 @@
+# 0.1.2
+
+- chore: remove git ignored files in brick
+
 # 0.1.1
 
 - docs: update readme

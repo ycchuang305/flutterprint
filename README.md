@@ -31,11 +31,11 @@ brew install mason
 Installation
 ```sh
 # Install locally
-mason add flutterprint --git-url https://github.com/ycchuang305/flutterprint --git-path brick/
+mason add flutterprint
 ```
 ```sh
 # Or install globally
-mason add -g flutterprint --git-url https://github.com/ycchuang305/flutterprint --git-path brick/
+mason add -g flutterprint
 ```
 
 Usage 🚀

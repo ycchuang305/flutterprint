@@ -1,7 +1,7 @@
 name: flutterprint
 description: A starter app for building maintainable & scalable Flutter apps, streamlining development with commonly used features.
 repository: https://github.com/ycchuang305/flutterprint
-version: 0.1.1
+version: 0.1.2
 
 environment:
   mason: ">=0.1.0-dev.32 <0.1.0"
