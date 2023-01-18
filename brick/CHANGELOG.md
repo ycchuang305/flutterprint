@@ -1,3 +1,8 @@
+# 0.1.3
+
+- chore(brick): upgrade to mason v0.1.0-dev.40
+- feat: run flutter pub get on template generated
+
 # 0.1.2
 
 - chore: remove git ignored files in brick
