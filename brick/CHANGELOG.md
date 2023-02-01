@@ -1,3 +1,7 @@
+# 0.1.4
+
+- feat: upgrade to Flutter 3.7.0
+
 # 0.1.3
 
 - chore(brick): upgrade to mason v0.1.0-dev.40
