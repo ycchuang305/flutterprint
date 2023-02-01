@@ -250,7 +250,7 @@ class _SigninPageState extends ConsumerState<SignInPage>
                                       textAlign: TextAlign.center,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6!,
+                                          .titleLarge!,
                                     ),
                             ),
                           ),
