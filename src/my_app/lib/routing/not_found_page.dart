@@ -20,7 +20,7 @@ class NotFoundPage extends ConsumerWidget {
             children: [
               Text(
                 l10n.pageNotFound,
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
               gapH32,
