@@ -183,7 +183,7 @@ class _BackendEnvironmentSettingPageState
                           child: Text(
                             l10n.save,
                             textAlign: TextAlign.center,
-                            style: Theme.of(context).textTheme.headline6!,
+                            style: Theme.of(context).textTheme.titleLarge!,
                           ),
                         ),
                       ),
