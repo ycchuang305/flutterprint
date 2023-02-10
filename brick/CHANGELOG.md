@@ -1,3 +1,8 @@
+# 0.1.5
+
+- feat: upgrade to Flutter 3.7.2
+- fix: debug error log not caught
+
 # 0.1.4
 
 - feat: upgrade to Flutter 3.7.0
