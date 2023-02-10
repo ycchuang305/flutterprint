@@ -11,24 +11,31 @@ import 'package:{{project_name.snakeCase()}}/routing/app_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  final pref = await SharedPreferences.getInstance();
-  final sharedPreferenceRepo = SharedPreferenceRepository(pref);
-
-  FlutterError.onError = ((details) {
-    log(details.exceptionAsString(), stackTrace: details.stack);
-  });
-
   await runZonedGuarded(
-    () async => runApp(
-      ProviderScope(
-        overrides: [
-          sharedPreferenceRepoProvider.overrideWithValue(sharedPreferenceRepo),
-        ],
-        child: const AppWidget(),
-      ),
-    ),
-    (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
+    () async {
+      WidgetsFlutterBinding.ensureInitialized();
+      final pref = await SharedPreferences.getInstance();
+      final sharedPreferenceRepo = SharedPreferenceRepository(pref);
+
+      FlutterError.onError = ((details) {
+        // Catch synchronous error
+        return log(details.exceptionAsString(), stackTrace: details.stack);
+      });
+
+      runApp(
+        ProviderScope(
+          overrides: [
+            sharedPreferenceRepoProvider
+                .overrideWithValue(sharedPreferenceRepo),
+          ],
+          child: const AppWidget(),
+        ),
+      );
+    },
+    (error, stackTrace) {
+      // Catch asynchronous error
+      return log(error.toString(), stackTrace: stackTrace);
+    },
   );
 }
 
